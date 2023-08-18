@@ -2,7 +2,7 @@
     0%{
         opacity: 0;
     }
-    50%{
+    40%{
         opacity: 0;
     }
     
@@ -14,9 +14,11 @@
 @keyframes opacity{
     0%{
         opacity: 0;
+        transform: translateY(-65%) translateX(-50%);
     }
     100%{
         opacity: 1;
+        transform: translateY(-50%) translateX(-50%);
     }
 }
 @import url('https://fonts.cdnfonts.com/css/futura-md-bt');
@@ -24,7 +26,7 @@
 
 .particle_bg{
     animation-name: opacity-delay;
-    animation-duration: 3s;
+    animation-duration: 2.2s;
     position: absolute;
     top: 0;
     left: 0;
@@ -159,7 +161,7 @@ body {
     100%{ transform:rotate(0deg) }
   }
   .hero-sec{
-    height: 110vh;
+    height: 300vh;
     overflow: hidden;
     position: relative;
   }
@@ -188,6 +190,9 @@ body {
   margin-top: 1.5em;
 
   transition-duration: 0.7s;
+
+
+
   .navbar-brand, .navbar-nav a {
     color: white;
     transition: 0.3s;
@@ -304,4 +309,48 @@ section{
 section{
     width: '100%';
     height: 90vh;
+}
+
+.wheel-group{
+    position: relative;
+}
+.wheel{
+    width: 38em;
+
+}
+.wheel-group{
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: opacity;
+    animation-duration: 1.2s;
+    background-color: #111;
+    -webkit-box-shadow: 0px 0px 19px 5px rgba(17,17,17,1);
+    -moz-box-shadow: 0px 0px 19px 5px rgba(17,17,17,1);
+    box-shadow: 0px 0px 19px 5px rgba(17,17,17,1);
+
+   // -webkit-mask-image: radial-gradient(ellipse 120% 120% at 50% 50%, black 40%, transparent 50%);
+   // mask-image: radial-gradient(ellipse 120% 120% at 50% 50%, black 40%, transparent 50%);
+}
+.x{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 10s linear infinite;
+    transform-origin: top left;
+    width: 8.5em;
+    background-color: #eb0028;
+    mask-image: url('assets/X_Mask.png');
+    -webkit-mask-box-image: url(assets/X_Mask.png);
+}
+.scrollTrack{
+    width: 100%;
+    height: 12px;
+    background-color: #eb0028;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    transform: translateX(-100%);
 }

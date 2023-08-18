@@ -1,3 +1,5 @@
+
+
 particlesJS("particles-js", {
     "particles": {
       "number": {
@@ -109,6 +111,10 @@ particlesJS("particles-js", {
     "retina_detect": true
   });
 
+  // End particle .js
+
+
+
   $(document).ready(function() {
   
     $(document).on("scroll", onScroll);
@@ -154,3 +160,71 @@ $(window).scroll(function() {
         
     }
 });
+
+
+//
+
+var controller = new ScrollMagic.Controller();
+
+new ScrollMagic.Scene({
+  duration: 1700, // the scene should last for a scroll distance of 100px
+  trigerElement: '#wheel-group',
+  //offset: 100 // start this scene after scrolling for 50px
+})
+  .setPin('#wheel-group') // pins the element for the the scene's duration
+  .addTo(controller); // assign the scene to the controller
+
+
+  // Scroll Timeline polyfill
+const scrollTracker = document.querySelector("#scrollTrack")
+const scrollTrackingTimeline = new ScrollTimeline({
+  source: document.scrollingElement,
+  orientation: 'block',
+  scrollOffsets: [CSS.percent(0), CSS.percent(100)]
+})
+
+scrollTracker.animate(
+  {
+    transform: ['translateX(1)', 'translateX(0)']
+  },
+  {
+  duration: 1,
+  timeline: scrollTrackingTimeline
+  }
+);
+
+const wheelTracker = document.querySelector("#wheel")
+const wheelTrackingTimeline = new ScrollTimeline({
+  source: document.querySelector('#hero-sec').scrollingElement,
+  orientation: 'block',
+  scrollOffsets: [CSS.percent(0), CSS.percent(100)]
+})
+
+wheelTracker.animate(
+  {
+    transform: ['rotate(0)', 'rotate(35deg) scale(0.7) ',],
+    opacity: [1,1,0]    
+  },
+  {
+  duration: 1,
+  timeline: wheelTrackingTimeline
+  }
+);
+
+const xTracker = document.querySelector("#x")
+const xTrackingTimeline = new ScrollTimeline({
+  source: document.querySelector('#hero-sec').scrollingElement,
+  orientation: 'block',
+  scrollOffsets: [CSS.px(0), CSS.px(700)]
+})
+
+xTracker.animate(
+  {
+    transform: ['scale(1) translateY(-50%) translateX(-50%)', 'scaleX(7) scaleY(7) translateY(-50%) translateX(-50%)', 'scaleX(10.8) scaleY(10) translateY(-50%) translateX(-10%)'],
+    background: ['#eb0028', 'transparent', 'transparent']
+  },
+  {
+  duration: 1,
+  timeline: xTrackingTimeline
+  }
+);
