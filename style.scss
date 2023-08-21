@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Bebas;
+    src: url(assets/BebasNeue-Regular.otf);
+  }
 @keyframes opacity-delay{
     0%{
         opacity: 0;
@@ -125,7 +129,7 @@ body {
   }
   
   .nav-btns{
-    font-size: 1.5rem;
+    font-size: 1.65rem;
     font-family: 'Futura Md BT', sans-serif;
     transition-duration: 0.4s;
     color: white;
@@ -185,17 +189,21 @@ body {
 }
 
 .navbar {
-  height: 40px;
+  height: 65px;
   background: transparent;
   margin-top: 1.5em;
 
   transition-duration: 0.7s;
-
-
-
+  .container{
+    height: 65px;
+  }
   .navbar-brand, .navbar-nav a {
     color: white;
+    font-size: 1.75rem;
     transition: 0.3s;
+    height: 65px;
+    display: flex;
+    align-items: center;
   }
   .navbar-brand:hover, .navbar-nav a:hover {
     transition: 0.5s;
@@ -356,8 +364,18 @@ section{
 }
 .about{
     width: 45%;
-    height: 80vh;
-    margin-top: 10vh;
-    opacity: 0;
-    background-color: #111;
+    height: 75vh;
+    margin-top: 12.5vh;
+//    opacity: 0;
+//    background-color: #111;
+}
+.about-head{
+    font-family: 'Bebas';
+    font-size: 13rem;
+    color: #eb0028;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    .super{
+        font-size: 9rem;
+    }
 }
