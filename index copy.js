@@ -165,19 +165,66 @@ $(window).scroll(function() {
 //
 
 var controller = new ScrollMagic.Controller();
-var tl = new TimelineMax();
-tl.to('#wheel', 1, { scale: 0.85, rotation: 17.5, ease: 'none' },0) // Power1.easeIn
-.to('#wheel', 1, { scale: 0.7, rotation: 35, opacity: 0, boxShadow: 0, ease: 'none' },1)
-.to('#x',1, {scale: 6, transformOrigin:"40px 42px", ease: 'none'  }, 0 )
-.to('#x',1, {scale: 9, transformOrigin:"40px 42px", backgroundColor: 'rgba(235,0,40,0)', x: 340, ease: Power1.easeOut }, 1 )
 
 new ScrollMagic.Scene({
-  duration: 1400, // the scene should last for a scroll distance of 100px
+  duration: 1800, // the scene should last for a scroll distance of 100px
   trigerElement: '#wheel-group',
   //offset: 100 // start this scene after scrolling for 50px
 })
-  .setPin('#hero-wrap') // pins the element for the the scene's duration
-  .setTween(tl)  
-  
+  .setPin('#wheel-group') // pins the element for the the scene's duration
   .addTo(controller); // assign the scene to the controller
 
+
+  // Scroll Timeline polyfill
+const scrollTracker = document.querySelector("#scrollTrack")
+const scrollTrackingTimeline = new ScrollTimeline({
+  source: document.scrollingElement,
+  orientation: 'block',
+  scrollOffsets: [CSS.percent(0), CSS.percent(100)]
+})
+
+scrollTracker.animate(
+  {
+    transform: ['translateX(1)', 'translateX(0)']
+  },
+  {
+  duration: 1,
+  timeline: scrollTrackingTimeline
+  }
+);
+
+const wheelTracker = document.querySelector("#wheel")
+const wheelTrackingTimeline = new ScrollTimeline({
+  source: document.querySelector('#hero-sec').scrollingElement,
+  orientation: 'block',
+  scrollOffsets: [CSS.percent(0), CSS.percent(100)]
+})
+
+wheelTracker.animate(
+  {
+    transform: ['rotate(0)', 'rotate(35deg) scale(0.7) ',],
+    opacity: [1,1,0]    
+  },
+  {
+  duration: 1,
+  timeline: wheelTrackingTimeline
+  }
+);
+
+const xTracker = document.querySelector("#x")
+const xTrackingTimeline = new ScrollTimeline({
+  source: document.querySelector('#hero-sec').scrollingElement,
+  orientation: 'block',
+  scrollOffsets: [CSS.percent(0), CSS.percent(100)]
+})
+
+xTracker.animate(
+  {
+    transform: ['scale(1) translateY(-50%) translateX(-50%)', 'scaleX(7) scaleY(7) translateY(-50%) translateX(-50%)', 'scaleX(10.8) scaleY(10) translateY(-50%) translateX(-10%)'],
+    background: ['#eb0028', 'transparent', 'transparent']
+  },
+  {
+  duration: 1,
+  timeline: xTrackingTimeline
+  }
+);

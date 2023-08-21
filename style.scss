@@ -92,11 +92,11 @@ body, #particle-js {
         font-size: 2rem;
     }
 }
-body {
-
+body {    
     margin:0;
     text-align: center;
     font-size: 10px;
+    -webkit-overflow-scrolling: touch;
   }
   
   .lamp { 
@@ -161,7 +161,7 @@ body {
     100%{ transform:rotate(0deg) }
   }
   .hero-sec{
-    height: 300vh;
+    height: 350vh;
     overflow: hidden;
     position: relative;
   }
@@ -353,4 +353,11 @@ section{
     bottom: 0;
     left: 0;
     transform: translateX(-100%);
+}
+.about{
+    width: 45%;
+    height: 80vh;
+    margin-top: 10vh;
+    opacity: 0;
+    background-color: #111;
 }
