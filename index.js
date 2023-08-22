@@ -170,6 +170,7 @@ tl.to('#wheel', 1, { scale: 0.85, rotation: 17.5, ease: 'none' },0) // Power1.ea
 .to('#wheel', 1, { scale: 0.7, rotation: 35, opacity: 0, boxShadow: 0, ease: 'none' },1)
 .to('#x',1, {scale: 6, transformOrigin:"40px 42px", ease: 'none'  }, 0 )
 .to('#x',1, {scale: 9, transformOrigin:"40px 42px", backgroundColor: 'rgba(235,0,40,0)', x: 340, ease: Power1.easeOut }, 1 )
+.to('#about-head', 1, {opacity: 1, width: 520,  ease: Power1.easeOut },1 )
 
 new ScrollMagic.Scene({
   duration: 1400, // the scene should last for a scroll distance of 100px
@@ -178,6 +179,6 @@ new ScrollMagic.Scene({
 })
   .setPin('#hero-wrap') // pins the element for the the scene's duration
   .setTween(tl)  
-  
+
   .addTo(controller); // assign the scene to the controller
 

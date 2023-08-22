@@ -357,7 +357,98 @@ section {
   color: #eb0028;
   margin-top: 1em;
   margin-bottom: 1em;
+  opacity: 0;
+  z-index: 99;
+  width: 0;
+  height: 186px;
+  overflow: hidden;
 }
 .about-head .super {
   font-size: 9rem;
+}
+
+#main-creative-section {
+  background-color: white;
+  position: absolute;
+  width: 100%;
+}
+
+#main-creative {
+  position: relative;
+  right: 10em;
+  bottom: 13em;
+  width: 87%;
+}
+
+.bubble8 {
+  position: absolute;
+  width: 13em;
+  bottom: 36.5em;
+  right: 57.5em;
+}
+
+.bubble7 {
+  position: absolute;
+  width: 14em;
+  bottom: 24em;
+  left: 84em;
+}
+
+.bubble9 {
+  position: absolute;
+  width: 16em;
+  bottom: 10.5em;
+  left: 78.5em;
+}
+
+.bubble5 {
+  position: absolute;
+  width: 17em;
+  bottom: 43em;
+  right: 42em;
+}
+
+.bubble4 {
+  position: absolute;
+  width: 15.5em;
+  bottom: 22em;
+  right: 39.5em;
+}
+
+.bubble6 {
+  position: absolute;
+  width: 18em;
+  bottom: 4em;
+  right: 40em;
+}
+
+.bubble2 {
+  position: absolute;
+  width: 16em;
+  bottom: 23em;
+  right: 22em;
+}
+
+.bubble1 {
+  position: absolute;
+  width: 20em;
+  bottom: 47em;
+  right: 20em;
+}
+
+.bubble3 {
+  position: absolute;
+  width: 20em;
+  bottom: 0.5em;
+  right: 17em;
+}
+
+.bubbles {
+  transition: all 0.2s;
+}
+
+.bubbles:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em rgba(240, 33, 33, 0.93);
+  transform: translateY(-0.25em);
+  transform: scale(1.1);
 }/*# sourceMappingURL=style.css.map */
