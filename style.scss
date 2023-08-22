@@ -506,3 +506,46 @@ section{
     transform: translateY(-0.25em);
     transform: scale(1.1);
 }
+
+
+.date-sec{
+    width: 100%;
+    opacity: 0;
+    transition: all 1s;
+}
+
+.date-wrap{
+    margin-top: 25em;
+}
+
+.date-text{
+    color: white;
+    font-size: 4.4rem;
+    color: #eb0028;
+}
+
+.visible{
+    opacity: 1;
+}
+
+#timer {  
+    font-size: 5em;
+    font-weight: 100;
+    color: white;
+    text-shadow: 0 0 25px #eb0028;
+    
+    transform: scale(2.5);
+
+    div {
+      display: inline-block;
+      min-width: 90px;
+      
+      span {
+        color: #eb0028;
+        display: block;
+        font-size: .35em;
+        font-weight: 400;
+      }
+    }
+  }
+
