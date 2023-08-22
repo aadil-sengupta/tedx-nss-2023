@@ -370,6 +370,27 @@ section {
   font-size: 9rem;
 }
 
+.about-text {
+  font-family: "Futura Md BT", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 6em;
+  padding-left: 1em;
+  overflow: hidden;
+  z-index: 99;
+  text-align: left;
+  opacity: 0;
+  border-left: 4px solid #eb0028;
+  height: 515px;
+  width: 0;
+  transform: translateY(70%);
+}
+
+.inlineLinks {
+  color: #eb0028;
+  text-decoration: underline;
+}
+
 #main-creative-section {
   background-color: white;
   position: absolute;
