@@ -1,3 +1,4 @@
+@import url('https://fonts.cdnfonts.com/css/futura-pt');
 @font-face {
     font-family: Bebas;
     src: url(assets/BebasNeue-Regular.otf);
@@ -165,7 +166,7 @@ body {
     100%{ transform:rotate(0deg) }
   }
   .hero-sec{
-    height: 350vh;
+    height: 320vh;
     overflow: hidden;
     position: relative;
   }
@@ -325,6 +326,7 @@ section{
 .wheel{
     width: 38em;
 
+
 }
 .wheel-group{
     position: absolute;
@@ -341,6 +343,9 @@ section{
    // -webkit-mask-image: radial-gradient(ellipse 120% 120% at 50% 50%, black 40%, transparent 50%);
    // mask-image: radial-gradient(ellipse 120% 120% at 50% 50%, black 40%, transparent 50%);
 }
+
+
+
 .x{
     position: absolute;
     top: 50%;
@@ -369,13 +374,46 @@ section{
 //    opacity: 0;
 //    background-color: #111;
 }
+
 .about-head{
     font-family: 'Bebas';
     font-size: 13rem;
     color: #eb0028;
     margin-top: 1em;
-    margin-bottom: 1em;
+    margin-bottom: -2.7em;
+    opacity: 1;
+    z-index: 99;
+    width: 0;
+    height: 186px;
+    overflow: hidden;
+    margin-left: 0.7em;
+    text-align: left;
     .super{
         font-size: 9rem;
+
+    
     }
 }
+.about-text{
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 6em;
+    padding-left: 1em;
+    overflow: hidden;
+    z-index: 99;
+    text-align: left;
+    opacity: 0;
+    border-left: 4px solid #eb0028;
+    height: 515px;
+    width: 0;
+    transform: translateY(70%);
+    
+
+}
+
+.inlineLinks{
+    color: #eb0028;
+    text-decoration: underline;
+}
+
