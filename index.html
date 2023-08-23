@@ -1,99 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
-    <title>TedxNavrachana School Sama</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>TedxNavrachana School Sama</title>
 </head>
+
 <body>
-    <nav class="fixed navbar navbar-default navbar-fixed-top" id="navbarMain">
-        <div class="container">
-          <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-            <a class="navbar-brand" style="background-color: transparent; margin-left: 3em;" href="#"><img class="nav-logo" src="assets/logo-white.png" alt=""></a>
-              </div>
-          <ul class="nav navbar-nav navbar-right nav-btns">
-                <li><a href="#" class="nav-btns-text" style="color: white;">Navrachana</a></li>
-                <li><a href="#"class="nav-btns-text" style="color: white;">Sponsors</a></li>
-                <li><a href="#"class="nav-btns-text" style="color: white;">Venue</a></li>
-                <li><a href="#"class="nav-btns-text" style="color: white;" >TEDx</a></li>
-                <li><a href="#" class="join-btn-nav noHover" style="color: white;" >Register Now</a></li>
-          </ul>
+  <nav class="fixed navbar navbar-default navbar-fixed-top" id="navbarMain">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+          aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" style="background-color: transparent; margin-left: 3em;" href="#"><img class="nav-logo"
+            src="assets/logo-white.png" alt=""></a>
+      </div>
+      <ul class="nav navbar-nav navbar-right nav-btns">
+        <li><a href="#" class="nav-btns-text" style="color: white;">Navrachana</a></li>
+        <li><a href="#" class="nav-btns-text" style="color: white;">Sponsors</a></li>
+        <li><a href="#" class="nav-btns-text" style="color: white;">Venue</a></li>
+        <li><a href="#" class="nav-btns-text" style="color: white;">TEDx</a></li>
+        <li><a href="#" class="join-btn-nav noHover" style="color: white;">Register Now</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="particle_bg" id="particles-js"></div>
+
+
+  <section class="hero-sec" id="hero-sec">
+    <div id="hero-wrap" class="hero-wrap">
+
+      <div class="wheel-group" id="wheel-group">
+        <img src="assets/wheel-white.png" class="wheel" id="wheel">
+        <img src="assets/Ted_X_.png" id="x" class="x">
+      </div>
+      <div class="about" id="about">
+        <div class="about-wrap">
+          <p id="about-head" class="about-head">About <span style="color: white;">TED</span><sup class="super">x</sup>
+          </p>
+          <p class="about-text">
+            In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people
+            together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark
+            deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently
+            organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx
+            events are self-organized. (Subject to certain rules and regulations.)
+            <br><br>
+            <span style="color: #eb0028;font-weight: bold;">About TED</span><br>
+            TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in
+            California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED
+            Conferences invite the world's leading thinkers and doers to speak for 18 minutes or less. Many of these
+            talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall,
+            Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and
+            Daniel Kahneman.
+            <br>
+            The annual TED Conference takes place each spring in Vancouver, British Columbia. TED's media initiatives
+            include TED.com, where new TED Talks are posted daily; TED Translators, which provides subtitles and
+            interactive transcripts as well as translations from volunteers worldwide; the educational initiative
+            TED-Ed. TED has established The Audacious Project that takes a collaborative approach to funding ideas with
+            the potential to create change at thrilling scale; TEDx, which supports individuals or groups in hosting
+            local, self- organized TED-style events around the world, and the TED Fellows program, helping
+            world-changing innovators from around the globe to amplify the impact of their remarkable projects and
+            activities.
+            <br><br>
+            Follow TED on <a class="inlineLinks" href="http://twitter.com/TEDTalks">Twitter</a>, or on <a
+              class="inlineLinks" href="http://www.facebook.com/TED">Facebook</a>.
+            <br>
+            You can also visit the <a class="inlineLinks" href="https://www.ted.com/tedx/events/54887">TEDxProgram
+              website</a>.
+          </p>
         </div>
-      </nav>      
-    <div class="particle_bg" id="particles-js"></div>
-    
-
-    <section class="hero-sec" id="hero-sec" >
-      <div id="hero-wrap" class="hero-wrap" >
-
-    <div class="wheel-group" id="wheel-group" >
-      <img src="assets/wheel-white.png" class="wheel" id="wheel">
-      <img src="assets/Ted_X_.png" id="x" class="x">
-    </div>
-    <div class="about" id="about" >
-      <div class="about-wrap" >
-        <p id="about-head" class="about-head" >About <span style="color: white;" >TED</span><sup class="super">x</sup> </p>
-          <p class="about-text" >
-            In the spirit of ideas worth spreading, TEDx is a program of local, self-organized events that bring people together to share a TED-like experience. At a TEDx event, TED Talks video and live speakers combine to spark deep discussion and connection. These local, self-organized events are branded TEDx, where x = independently organized TED event. The TED Conference provides general guidance for the TEDx program, but individual TEDx events are self-organized. (Subject to certain rules and regulations.)
-          <br><br>
-          <span style="color: #eb0028;font-weight: bold;" >About TED</span><br>
-          TED is a nonprofit organization devoted to Ideas Worth Spreading. Started as a four-day conference in California 30 years ago, TED has grown to support its mission with multiple initiatives. The two annual TED Conferences invite the world's leading thinkers and doers to speak for 18 minutes or less. Many of these talks are then made available, free, at TED.com. TED speakers have included Bill Gates, Jane Goodall, Elizabeth Gilbert, Sir Richard Branson, Nandan Nilekani, Philippe Starck, Ngozi Okonjo-Iweala, Sal Khan and Daniel Kahneman. 
-          <br>
-          The annual TED Conference takes place each spring in Vancouver, British Columbia. TED's media initiatives include TED.com, where new TED Talks are posted daily; TED Translators, which provides subtitles and interactive transcripts as well as translations from volunteers worldwide; the educational initiative TED-Ed. TED has established The Audacious Project that takes a collaborative approach to funding ideas with the potential to create change at thrilling scale; TEDx, which supports individuals or groups in hosting local, self- organized TED-style events around the world, and the TED Fellows program, helping world-changing innovators from around the globe to amplify the impact of their remarkable projects and activities. 
-          <br><br>
-          Follow TED on <a class="inlineLinks" href="http://twitter.com/TEDTalks">Twitter</a>, or on <a class="inlineLinks" href="http://www.facebook.com/TED">Facebook</a>.
-          <br>
-          You can also visit the <a class="inlineLinks" href="https://www.ted.com/tedx/events/54887">TEDxProgram website</a>.
-                  </p>
       </div>
     </div>
-  </div>
-    </section>
-    
-    <section class="date-sec" >
-      <div id="timer"></div>
-      <div class="date-wrap" >
-        <p class="date-text"> 28th <span style="color: white;"> September </span> 2023</p>
-      </div>
-    </section>
+  </section>
 
-    <section id="main-creative-section">
+  <section class="date-sec">
+    <div id="timer"></div>
+    <div class="date-wrap">
+      <p class="date-text"> 28th <span style="color: white;"> September </span> 2023</p>
+    </div>
+  </section>
+
+  <section id="main-creative-section">
+
+    <img src="assets\without bubble.png" alt="" id="main-creative">
+
+    <img src="assets\bulb.svg" alt="" class="bubble8 bubbles">
+    <img src="assets\hands.svg" alt="" class="bubble7 bubbles">
+    <img src="assets\heart.svg" alt="" class="bubble9 bubbles">
+    <img src="assets\atom.svg" alt="" class="bubble5 bubbles">
+    <img src="assets\book.svg" alt="" class="bubble4 bubbles">
+    <img src="assets\law.svg" alt="" class="bubble6 bubbles">
+    <img src="assets\planet.svg" alt="" class="bubble1 bubbles">
+    <img src="assets\oldppl.svg" alt="" class="bubble2 bubbles">
+    <img src="assets\globe.svg" alt="" class="bubble3 bubbles">
+  </section>
+
+  <br>
+  <section>
+    <div class="containercards">
+      <div class="card" id="card2">
+        <div class="inner">
+          <div>
+            <img
+              src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80"
+              class="speakersimg"></img>
+          </div>
+          <div class="cover cover2">
+            <h1 style="margin: 0.25em"> Speakers Name</h1>
+            <h2 style="margin-top: 0.1; margin-bottom: 1.5em"> About The Speaker</h2>
+            <button class="cardbutton">Learn More</button>
+          </div>
+        </div>
+      </div>
       
-        <img src="assets\without bubble.png" alt="" id="main-creative"> 
+    </div>
+  </section>
+  </div>
 
-        <img src="assets\bulb.svg" alt="" class="bubble8 bubbles">
-        <img src="assets\hands.svg" alt="" class="bubble7 bubbles">
-        <img src="assets\heart.svg" alt="" class="bubble9 bubbles">
-        <img src="assets\atom.svg" alt="" class="bubble5 bubbles">
-        <img src="assets\book.svg" alt="" class="bubble4 bubbles">
-        <img src="assets\law.svg" alt="" class="bubble6 bubbles">
-        <img src="assets\planet.svg" alt="" class="bubble1 bubbles">
-        <img src="assets\oldppl.svg" alt="" class="bubble2 bubbles">
-        <img src="assets\globe.svg" alt="" class="bubble3 bubbles">
-    </section>
+  </div>
 
+  <div class="scrollTrack" id="scrollTrack"></div>
+  <!-- <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js" ></script> -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
 
-    <div class="scrollTrack" id="scrollTrack"></div>
-    <!-- <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js" ></script> -->
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-
-    <script src="index.js"></script>
+  <script src="index.js"></script>
 
 </body>
+
 </html>
