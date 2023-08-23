@@ -356,7 +356,9 @@ section{
     width: 8.5em;
     background-color: #eb0028;
     mask-image: url('assets/X_Mask.png');
-    -webkit-mask-box-image: url(assets/X_Mask.png);
+    mask-size: 100% 100%;
+    -webkit-mask-size: 100% 100%;
+    
 }
 .scrollTrack{
     width: 100%;
