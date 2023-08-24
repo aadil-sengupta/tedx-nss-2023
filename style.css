@@ -507,7 +507,7 @@ section {
   transition: ease-in-out 0.3s;
 }
 .date-wrap .cardContainer:hover {
-  border-radius: 15px;
+  border-radius: 20px;
   transform: scale(1.1);
   transition: ease-in-out 0.6s;
   box-shadow: 0px 0px 201px -5px rgba(0, 0, 0, 0.7);

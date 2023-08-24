@@ -222,3 +222,14 @@ new ScrollMagic.Scene({
   }
   setInterval('updateTimer()', 1000 );
   
+
+
+  const timerDiv = document.getElementById('timer');
+  const section = document.querySelector('.date-sec');
+  
+  section.addEventListener('mousemove', (e) => {
+    const xPos = (e.clientX / section.offsetWidth - 0.5) * 60; // Adjust the multiplier as needed
+    const yPos = (e.clientY / section.offsetHeight - 0.5) * 60; // Adjust the multiplier as needed
+    timerDiv.style.transform = `translate(${xPos}px, ${yPos}px) scale(2.5)`;
+  });
+  
