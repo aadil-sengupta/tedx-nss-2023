@@ -192,8 +192,8 @@ new ScrollMagic.Scene({
   duration: "100%", // hide 10% before exiting view (80% + 10% from bottom)
   offset: 50 // move trigger to center of element
 })
-.setClassToggle(".date-sec", "visible") // add class to reveal
-.addIndicators() // add indicators (requires plug
+.setClassToggle(".timer-wrap", "visible") // add class to reveal
+//.addIndicators() // add indicators (requires plug
 .addTo(controller);
 
 
