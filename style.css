@@ -504,9 +504,14 @@ section {
 .date-wrap .cardContainer {
   height: 80%;
   width: 24%;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.5s;
+  border-radius: 8px;
+  outline-color: #eb0028;
 }
 .date-wrap .cardContainer:hover {
+  outline-color: #eb0028;
+  outline-width: 2px;
+  outline-style: solid;
   border-radius: 20px;
   transform: scale(1.1);
   transition: ease-in-out 0.6s;
@@ -546,6 +551,15 @@ section {
   margin-left: 2px;
   font-family: "Futura Md BT", sans-serif;
   font-size: 1.34rem;
+}
+
+.map {
+  width: 74%;
+  border-radius: 10px;
+  outline-color: #eb0028;
+  outline-style: solid;
+  outline-width: 5px;
+  margin-bottom: 20vh;
 }
 
 .timer-wrap {

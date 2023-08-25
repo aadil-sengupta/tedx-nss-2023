@@ -590,8 +590,13 @@ section {
     .cardContainer{
         height: 80%;
         width: 24%;
-        transition: ease-in-out 0.3s;
+        transition: ease-in-out 0.5s;
+        border-radius: 8px;
+        outline-color: #eb0028;
         &:hover{
+            outline-color: #eb0028;
+            outline-width: 2px;
+            outline-style: solid;
             border-radius: 20px;
 
             transform: scale(1.1);
@@ -648,6 +653,15 @@ section {
 
 }
 
+.map{
+    width: 74%;
+    border-radius: 10px;
+    outline-color: #eb0028;
+    outline-style: solid;
+    outline-width: 5px;
+
+    margin-bottom: 20vh;
+}
 
 .timer-wrap{
     opacity: 0;
