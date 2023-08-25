@@ -584,10 +584,11 @@ section {
     height: 45vh;
     width: 93%;
     margin: 0 auto;
-    margin-top: 30vh;
+    margin-top: 25vh;
     display: flex;
     justify-content: space-evenly;
     .cardContainer{
+        opacity: 0;
         height: 80%;
         width: 24%;
         transition: ease-in-out 0.5s;
@@ -668,7 +669,7 @@ section {
     transition: all 1s;
 }
 .visible {
-    opacity: 1;
+    opacity: 1 !important;  
 }
 
 #timer {
@@ -676,7 +677,7 @@ section {
     font-weight: 100;
     color: white;
     text-shadow: 0 0 25px #eb0028;
-    
+
     transform: scale(2.5);
 
     div {
@@ -782,3 +783,54 @@ section {
 }
 
 
+
+
+
+// MOUSE TRAILER
+
+#trailer{
+    //height: 20px;
+      //width: 20px;
+      border-radius: 20px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      pointer-events: none;
+      opacity: 0;
+      //background-color: rgba(235, 0, 40, 0.5);
+      z-index: 9;
+      //background: linear-gradient(180deg, rgba(235, 0, 40, 1) 21%, rgba(235, 0, 40, 1) 39%);
+      transition: transform 0.001s ease-in-out, background-color 0.1s ease;
+      -webkit-box-shadow: 0px 0px 73px 47px rgba(235,0,40,0.27);
+      -moz-box-shadow: 0px 0px 73px 47px rgba(235,0,40,0.27);
+      box-shadow: 0px 0px 73px 47px rgba(235,0,40,0.27);
+  }
+  body:hover > #trailer{
+    opacity: 1;
+  }
+  .interactables{
+    width: 100px;
+    height: 100px;
+    width: 200px;
+    height: 420px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s all;
+  }
+  .interactables:hover{
+    transform : scale(1.1);
+    opacity: 0.8;
+  }
+  .interactable{
+    width: 100px;
+    height: 100px;
+    width: 200px;
+    height: 420px;
+    background: white;
+    transition: 0.5s all;
+  }
+  .interactable:hover{
+    transform : scale(1.1);
+    opacity: 0.8;
+  }
+// MOUSE TRAILER END

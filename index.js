@@ -195,6 +195,16 @@ new ScrollMagic.Scene({
 .setClassToggle(".timer-wrap", "visible") // add class to reveal
 //.addIndicators() // add indicators (requires plug
 .addTo(controller);
+var cardReveal = document.getElementsByClassName("cardContainer");
+for (var i=0; i < cardReveal.length; i++) { // create a scene for each element
+  new ScrollMagic.Scene({
+            triggerElement: cardReveal[i], // y value not modified, so we can use element as trigger as well
+            offset: i*80,												 // start a little later
+            triggerHook: 0.9,
+          })
+          .setClassToggle(cardReveal[i], "visible") // add class toggle
+          .addTo(controller);
+}
 
 
   /// Timer ///
@@ -233,3 +243,26 @@ new ScrollMagic.Scene({
     timerDiv.style.transform = `translate(${xPos}px, ${yPos}px) scale(2.5)`;
   });
   
+
+  const trailer = document.getElementById("trailer");
+
+  const animateTrailer =(e, interacting)=> {
+    const x = e.clientX - trailer.offsetWidth / 2,
+          y = e.clientY - trailer.offsetHeight / 2;
+    
+    
+    const keyframes = {
+      transform :`translate(${x}px , ${y}px) scale(${interacting ? 8 : 1})`
+    }
+      trailer.animate(keyframes ,{
+      duration:500,
+        fill: "forwards"
+     });
+  }
+  
+  window.onmousemove = e =>{
+    const interactable = e.target.closest(".interactables");
+    interacting = interactable !== null;
+    
+    animateTrailer(e, interactable);
+  }
