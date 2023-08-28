@@ -1,4 +1,5 @@
 @import url("https://fonts.cdnfonts.com/css/futura-pt");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 @import url("https://fonts.cdnfonts.com/css/futura-md-bt");
 @import url("https://fonts.cdnfonts.com/css/montserrat");
 @import url(https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic);
@@ -6,10 +7,6 @@
 @font-face {
   font-family: Bebas;
   src: url(assets/BebasNeue-Regular.otf);
-}
-@font-face {
-  font-family: Forque;
-  src: url(assets/Forque.ttf);
 }
 @keyframes opacity-delay {
   0% {
@@ -281,7 +278,6 @@ body {
 
 section {
   height: auto;
-  min-height: 50vh;
 }
 
 .lightbulb-logo {
@@ -308,7 +304,6 @@ section {
 
 section {
   width: "100%";
-  height: 90vh;
 }
 
 .wheel-group {
@@ -403,6 +398,42 @@ section {
 #main-creative-section {
   background-color: white;
   position: relative;
+  width: 110%;
+  height: 90vh;
+}
+
+.main-creative-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.main-theme-section {
+  background-color: white;
+  width: 100%;
+  height: auto;
+  padding: 5vh 9vh;
+}
+.main-theme-section .title {
+  font-family: "Bebas";
+  font-size: 14rem;
+  opacity: 0;
+  transition: ease 0.65s;
+  color: #000;
+  width: 100%;
+  text-align: center;
+}
+.main-theme-section .wrap {
+  width: 100%;
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2.2rem;
+  margin-top: 2em;
+  opacity: 0;
+  transition: ease-out 0.65s;
+}
+
+.main-text-wrap {
   width: 100%;
 }
 
@@ -746,4 +777,55 @@ body:hover > #trailer {
 .interactable:hover {
   transform: scale(1.1);
   opacity: 0.8;
+}
+
+.tickets-sec {
+  width: 100%;
+  height: auto;
+  display: flex;
+  margin: 10vh 0;
+  padding: 0 5em;
+}
+.tickets-sec .lhs {
+  width: 40%;
+  overflow: hidden;
+  z-index: 999;
+}
+.tickets-sec .lhs .ticket {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: ease-out 0.3s;
+  z-index: 999;
+}
+.tickets-sec .lhs .ticket:hover {
+  box-shadow: 0px 0px 201px -5px #eb0028;
+  transform: scale(1.06);
+  transition: ease-out 0.5s;
+}
+.tickets-sec .rhs {
+  width: 60%;
+}
+.tickets-sec .rhs .header {
+  font-family: "Bebas";
+  font-size: 8rem;
+  color: #eb0028;
+}
+.tickets-sec .rhs .text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 2rem;
+  width: 85%;
+  margin: auto;
+  color: #fff;
+  margin-top: 1em;
+}
+.tickets-sec .rhs .price {
+  font-family: "Bebas", sans-serif;
+  font-size: 14rem;
+  color: #eb0028;
+  margin: 0.45em 0;
+}
+.tickets-sec .rhs .qrcode {
+  max-width: 250px;
 }/*# sourceMappingURL=style.css.map */

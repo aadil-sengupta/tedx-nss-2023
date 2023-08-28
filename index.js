@@ -205,6 +205,25 @@ for (var i=0; i < cardReveal.length; i++) { // create a scene for each element
           .setClassToggle(cardReveal[i], "visible") // add class toggle
           .addTo(controller);
 }
+var text1_theme = document.querySelector("#text1-theme");
+new ScrollMagic.Scene({
+  triggerElement: text1_theme, // y value not modified, so we can use element as trigger as well
+  offset: 170,												 // start a little later
+  triggerHook: 0.9,
+})
+.setClassToggle(text1_theme, "visible") // add class toggle
+.addIndicators() // add indicators (requires plug
+.addTo(controller);
+
+var text2_theme = document.querySelector("#text2-theme");
+new ScrollMagic.Scene({
+  triggerElement: text2_theme, // y value not modified, so we can use element as trigger as well
+  offset: 170,												 // start a little later
+  triggerHook: 0.9,
+})
+.setClassToggle(text2_theme, "visible") // add class toggle
+.addIndicators() // add indicators (requires plug
+.addTo(controller);
 
 
   /// Timer ///
