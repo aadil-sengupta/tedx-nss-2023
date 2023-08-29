@@ -621,7 +621,7 @@ section {
 
 
 .date-wrap{
-    height: 45vh;
+    height: 25vh;
     width: 93%;
     margin: 0 auto;
     margin-top: 25vh;
@@ -633,13 +633,13 @@ section {
         width: 24%;
         transition: ease-in-out 0.5s;
         border-radius: 8px;
-        outline-color: #eb0028;
-        &:hover{
-            outline-color: #eb0028;
-            outline-width: 2px;
-            outline-style: solid;
-            border-radius: 20px;
+        outline-color: #ffffff;
+        outline-width: 2px;
+        outline-style: solid;
 
+        &:hover{
+            border-radius: 20px;
+            outline-color: #eb0028;
             transform: scale(1.1);
             transition: ease-in-out 0.6s;
 
@@ -651,35 +651,46 @@ section {
             box-shadow: 0px 0px 201px -5px rgba(0,0,0,0.7);
 
             background-color: #111;
-
+            .top{
+                .icon{
+                    color: white;
+                    transition: ease 0.5s;
+                }
+                .title{
+                    color: white;
+                    transition: ease 0.5s;
+                }
+            }
         }
 
         .top{
             width: 100%;
-            height: 50%;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            align-items: center;
             padding: 0 1.5em;
             .icon{
-                font-size: 4rem;
+                font-size: 6rem;
                 color: #eb0028;
+                transition: ease 0.5s;
             }
             .title{
-                font-size: 2.5rem;
+                font-size: 3.5rem;
                 font-weight: 700;
                 color: #eb0028;
                 margin-left: 2px;
-                text-align: left;
+                text-align: center;
                 width: 100%;
-                margin-top: 5px;
+                margin-top: 15px;
                 font-family: "Futura Md BT", sans-serif;
-
+                transition: ease 0.5s;
             }
         }
         .bottom{
             width: 100%;
-            height: 50%;
+            //height: 50%;
             padding: 0 1.5em;
             p{
                 color: white;
@@ -700,7 +711,7 @@ section {
     outline-color: #eb0028;
     outline-style: solid;
     outline-width: 5px;
-
+    margin-top: 6em;
     margin-bottom: 20vh;
 }
 
@@ -1070,17 +1081,23 @@ footer{
         padding: 0;
         height: auto;
         margin-bottom: 2em;
-        width: 98%;
+        width: 96%;
         .cardContainer{
             width: 48%;
             padding: 0;
             .top{
                 font-size: 2rem;
                 padding: 0 0.5em;
+                min-height: 200px;
+                .title{
+                    font-size: 1.2em;
+                    line-height: 26px;
+                }
             }
             .bottom{
                 font-size: 1.2rem;
                 padding: 0 0.5em;
+                
             }
         }
         .two-wrap{
