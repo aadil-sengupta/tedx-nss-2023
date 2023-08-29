@@ -23,16 +23,17 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" style="background-color: transparent; margin-left: 3em;" href="#"><img class="nav-logo"
+        </button> 
+        <a class="navbar-brand" style="background-color: transparent;" href="#"><img class="nav-logo"
             src="assets/logo-white.png" alt=""></a>
       </div>
       <ul class="nav navbar-nav navbar-right nav-btns">
-        <li><a href="#" class="nav-btns-text" style="color: white;">Navrachana</a></li>
-        <li><a href="#" class="nav-btns-text" style="color: white;">Sponsors</a></li>
-        <li><a href="#" class="nav-btns-text" style="color: white;">Venue</a></li>
-        <li><a href="#" class="nav-btns-text" style="color: white;">TEDx</a></li>
-        <li><a href="#" class="join-btn-nav noHover" style="color: white;">Register Now</a></li>
+        <!-- <li><a target="_blank" href="https://www.ted.com/tedx/events/54887" class="nav-btns-text" style="color: white;">TEDx</a></li> -->
+        <li><a target="_blank" href="https://www.ted.com/tedx/events/54887" class="nav-btns-text" style="color: white;"><img src="assets/tedx-logo.png" class="navbar-btn-logo" alt=""></a></li>
+        <li><a href="#timer" class="nav-btns-text" style="color: white;">Details</a></li>
+        <li><a href="#theme" class="nav-btns-text" style="color: white;">Theme</a></li>
+        <li><a  class="nav-btns-text" style="color: white;">Speakers</a></li>
+        <li><a  href="#" class="join-btn-nav noHover" style="color: white;">Buy Tickets</a></li>
       </ul>
     </div>
   </nav>
@@ -90,8 +91,7 @@
     <div id="timer"></div>
   </div>
 
-  <div class="date-wrap" >
-
+  <div class="date-wrap desk">
     <div class="cardContainer">
         <div class="top" >
           <ion-icon class="icon"  name="calendar-outline"></ion-icon>
@@ -126,14 +126,55 @@
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, suscipit similique. Explicabo, e`xpedita. Itaque inventore ipsam molestias repellat assumenda nulla eligendi cum? Dignissimos in id quae animi similique, nesciunt obcaecati!
       </p>
     </div>
+  </div>
+
+  </div>
+  <div class="mob date-wrap">
+    <div class="two-wrap" >
+    <div class="cardContainer">
+        <div class="top" >
+          <ion-icon class="icon"  name="calendar-outline"></ion-icon>
+          <p class="title" > 28th September 2023</p>
+        </div>
+        <div class="bottom" >
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, suscipit similique. Explicabo, expedita. Itaque inventore ipsam molestias repellat assumenda nulla eligendi cum?
+          </p>
+        </div>
+    </div>
+
+    <div class="cardContainer">
+      <div class="top" >
+        <ion-icon class="icon"  name="time-outline"></ion-icon>
+        <p class="title" > 9:30 A.M.</p>
+      </div>
+      <div class="bottom" >
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, suscipit similique. Explicabo, expedita. Itaque inventore ipsam molestias repellat assumenda nulla eligendi cum? Dignissimos in id quae animi similique, nesciunt obcaecati!
+        </p>
+      </div>
+  </div>
+</div>
+<div class="one-wrap">
+  <div class="cardContainer">
+      <div class="top" >
+        <ion-icon name="location-outline" class="icon"></ion-icon>
+        <p class="title" > Rambagh Party Plot</p>
+      </div>
+      <div class="bottom" >
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Amet, suscipit similique. Explicabo, e`xpedita. Itaque inventore ipsam molestias repellat assumenda nulla eligendi cum? Dignissimos in id quae animi similique, nesciunt obcaecati!
+        </p>
+      </div>
+  </div>
 </div>
   </div>
 
-  <iframe class="map"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14763.305599862593!2d73.1736496!3d22.3224043!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8c9ca2479f9%3A0x1e9fc616e4daf709!2sRambagh%20Party%20Plot!5e0!3m2!1sen!2sin!4v1693071382039!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <iframe class="map" id="map"  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14763.305599862593!2d73.1736496!3d22.3224043!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395fc8c9ca2479f9%3A0x1e9fc616e4daf709!2sRambagh%20Party%20Plot!5e0!3m2!1sen!2sin!4v1693071382039!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
   </section>
 
-  <section class="main-theme-section" >
-    <p id="text1-theme" class="title"><span style="color: #eb0028;" >Why</span> not? <span style="color: #eb0028;" >Steer</span> the <span style="color: #eb0028;" > change</span></p>
+  <section id="theme" class="main-theme-section" >
+    <p id="text1-theme" class="title"><span style="color: #eb0028;" >RE</span>VOLVE. <span style="color: #eb0028;" >Steer</span> the <span style="color: #eb0028;" > change.</span></p>
     <div id="text2-theme" class="wrap">
         <p> In this dynamic era of the 21st century, the wheels of change spin incessantly, propelling us towards a horizon of transformation. Each cog interlocks with precision and the engine of evolution roars to life as we are witnessing remarkable breakthroughs and innovations at unprecedented levels. Technology advancing with an astonishing might, entrepreneurs surging with a lightening speed, social fabric undergoing profound shifts and the threat of the bugle call- a deadly war hovers around us. The moment has arrived, not to pull the brakes but steer through the roads of ingenuity. It is time for the stewards of change to leverage the power of advancements today.  The gears of change  rotate relentlessly, navigating the elaborate network of ideas that change the world! Navrachana School, Sama is back with another edition of TEDx Navrachana school Sama!  </p>
   </div>
@@ -202,7 +243,7 @@
     <div class="rhs" >
         <p class="header" >Ticket</p>
         <p class="text" >Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati cum possimus dignissimos voluptatum inventore itaque officia fuga harum nobis vero, accusantium autem a aliquam! Laborum libero facilis non fugiat magnam.</p>
-        <p class="price"> ₹799 </p>
+        <p class="price"> ₹700</p>
         <img src="assets/qrcode.png" class="qrcode">
     </div>
 
@@ -211,8 +252,19 @@
   </div>
   </div>
 
+  <footer class="footer" >
+    <img class="logo" src="assets/logo-white.png">
+    <div class="links">
+      <p>Links</p>
+      <a  href="/">Home</a>
+      <a target="_blank" href="https://www.ted.com/tedx/events/54887">TEDxProgram</a>
+      <a target="_blank" href="https://navrachana.org/navrachana-higher-secondary-school/">Navrachana School Sama</a>
+    </div>
+    <a href="#" class="join-btn-nav noHover btn" style="color: white;">Buy Tickets</a>
+  </footer>
+
   <!-- <div class="scrollTrack" id="scrollTrack"></div> -->
-  <div id="trailer">
+  <div id="trailer"> </div>
   
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

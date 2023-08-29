@@ -1,4 +1,7 @@
-
+function detectMob() {
+  return ( ( window.innerWidth <= 800 ) );
+}
+console.log(detectMob());
 
 particlesJS("particles-js", {
     "particles": {
@@ -124,8 +127,7 @@ particlesJS("particles-js", {
         $(document).off('scroll');
 
         $(this).blur();
-        $('.navbar-right li').removeClass('active');
-        $(this).parent('li').addClass('active');
+
 
         $('html, body').stop().animate({
             'scrollTop': $(this.hash).offset().top
@@ -170,9 +172,9 @@ tl.to('#wheel', 1, { scale: 0.85, rotation: 17.5, ease: 'none' },0) // Power1.ea
 .to('#wheel', 1, { scale: 0.7, rotation: 35, opacity: 0, boxShadow: 0, ease: 'none' },1)
 .to('#wheel-group', 0, { backgroundColor: 'none', boxShadow:0, ease: 'none' },1)
 .to('#x',1, {scale: 6, transformOrigin:"40px 42px", ease: 'none'  }, 0 )
-.to('#x',1, {scale: 9, transformOrigin:"40px 42px", backgroundColor: 'rgba(235,0,40,0)', x: 340, ease: Power1.easeOut }, 1 )
-.to('#about-head', 1, {opacity: 1, width: 520,  ease: 'none' },1 )
-.to('.about-text', 1, {opacity: 1, width: 720, ease: 'none' },1 )
+.to('#x',1, {scale: 9, transformOrigin:"40px 42px",opacity: detectMob() ? 0:1 , backgroundColor: detectMob() ? 'transparent':'rgba(235,0,40,0)',x: detectMob() ? 0 : 340, ease: Power1.easeOut }, 1 )
+.to( detectMob() ? '' : '#about-head', 1, { opacity: 1, width: 520,  ease: 'none' },1 )
+.to( detectMob() ? '' : '.about-text', 1, { opacity: 1, width: 720, ease: 'none' },1 )
 
 
 new ScrollMagic.Scene({
@@ -212,7 +214,7 @@ new ScrollMagic.Scene({
   triggerHook: 0.9,
 })
 .setClassToggle(text1_theme, "visible") // add class toggle
-.addIndicators() // add indicators (requires plug
+//.addIndicators() // add indicators (requires plug
 .addTo(controller);
 
 var text2_theme = document.querySelector("#text2-theme");
@@ -222,7 +224,7 @@ new ScrollMagic.Scene({
   triggerHook: 0.9,
 })
 .setClassToggle(text2_theme, "visible") // add class toggle
-.addIndicators() // add indicators (requires plug
+//.addIndicators() // add indicators (requires plug
 .addTo(controller);
 
 
@@ -252,6 +254,7 @@ new ScrollMagic.Scene({
   setInterval('updateTimer()', 1000 );
   
 
+  if (!detectMob()) {
 
   const timerDiv = document.getElementById('timer');
   const section = document.querySelector('.date-sec');
@@ -261,15 +264,12 @@ new ScrollMagic.Scene({
     const yPos = (e.clientY / section.offsetHeight - 0.5) * 60; // Adjust the multiplier as needed
     timerDiv.style.transform = `translate(${xPos}px, ${yPos}px) scale(2.5)`;
   });
-  
+
 
   const trailer = document.getElementById("trailer");
-
   const animateTrailer =(e, interacting)=> {
     const x = e.clientX - trailer.offsetWidth / 2,
           y = e.clientY - trailer.offsetHeight / 2;
-    
-    
     const keyframes = {
       transform :`translate(${x}px , ${y}px) scale(${interacting ? 8 : 1})`
     }
@@ -278,10 +278,12 @@ new ScrollMagic.Scene({
         fill: "forwards"
      });
   }
-  
+
   window.onmousemove = e =>{
     const interactable = e.target.closest(".interactables");
     interacting = interactable !== null;
     
     animateTrailer(e, interactable);
   }
+
+}
