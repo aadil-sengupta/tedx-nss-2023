@@ -490,7 +490,7 @@ section {
 #main-creative-section {
     background-color: white;
     position: relative;
-    width: 110%;
+    width: 100%;
     height: 90vh;
 }
 
@@ -964,7 +964,7 @@ section {
 
 
 footer{
-    height: 28vh;
+    height: 22vh;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -1002,7 +1002,30 @@ footer{
 .mob{
     display: none;
 }
+.about-head-mob{
+    font-family: 'Bebas';
+    font-size: 8rem;
+    color: #eb0028;
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    z-index: 99;
 
+    .super {
+        font-size: 5rem;
+    }
+}
+.about-text-mob{
+    font-family: 'Futura Md BT', sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 1em;
+    padding-left: 1em;
+    z-index: 99;
+    text-align: left;
+    border-left: 4px solid #eb0028;
+    height: 915px;
+    margin-bottom: 3em;
+}
 
 @media screen and (max-width:800px){
 
@@ -1081,6 +1104,23 @@ footer{
         
     }
 
+    .nav{
+        background-color: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(10px);
+        transform: translateX(120%);
+        transition: ease-in 0.3s;
+    }
+    .navOpen{
+        transform: translateX(20%);
+        transition: ease-out 0.3s;
+    }
+    #toggleNav{
+        background-color: transparent;
+    }
+
+
+
+
 
 
     .mob{
@@ -1090,3 +1130,4 @@ footer{
         display: none;
     }
 }
+
