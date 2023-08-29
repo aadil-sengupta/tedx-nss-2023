@@ -201,10 +201,11 @@ var cardReveal = document.getElementsByClassName("cardContainer");
 for (var i=0; i < cardReveal.length; i++) { // create a scene for each element
   new ScrollMagic.Scene({
             triggerElement: cardReveal[i], // y value not modified, so we can use element as trigger as well
-            offset: i*80,												 // start a little later
+            offset: detectMob() ? i*50 : i*80,												 // start a little later
             triggerHook: 0.9,
           })
           .setClassToggle(cardReveal[i], "visible") // add class toggle
+          //.addIndicators()
           .addTo(controller);
 }
 var text1_theme = document.querySelector("#text1-theme");

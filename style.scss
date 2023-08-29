@@ -1025,6 +1025,8 @@ footer{
     border-left: 4px solid #eb0028;
     height: 915px;
     margin-bottom: 3em;
+
+    width: 94%;
 }
 
 @media screen and (max-width:800px){
@@ -1033,7 +1035,10 @@ footer{
         transform: scale(1);
     }
     footer{
-        display: none;
+        .logo{
+            width: 45%;
+            height: auto;
+        }
     }
     body{
         overflow-x: hidden;
@@ -1105,7 +1110,7 @@ footer{
     }
 
     .nav{
-        background-color: rgba(0, 0, 0, 0.75);
+        background-color: rgba(0, 0, 0, 0.45);
         backdrop-filter: blur(10px);
         transform: translateX(120%);
         transition: ease-in 0.3s;

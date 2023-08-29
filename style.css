@@ -911,14 +911,16 @@ footer .btn:hover {
   border-left: 4px solid #eb0028;
   height: 915px;
   margin-bottom: 3em;
+  width: 94%;
 }
 
 @media screen and (max-width: 800px) {
   #timer {
     transform: scale(1);
   }
-  footer {
-    display: none;
+  footer .logo {
+    width: 45%;
+    height: auto;
   }
   body {
     overflow-x: hidden;
@@ -985,7 +987,7 @@ footer .btn:hover {
     margin: 5em auto;
   }
   .nav {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.45);
     -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
     transform: translateX(120%);
