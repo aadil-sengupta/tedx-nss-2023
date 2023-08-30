@@ -730,31 +730,101 @@ section {
   gap: 50px;
 }
 
-.curators-section {
-  width: 93%;
-  margin: 0 auto;
-  margin-top: 15vh;
-  display: flex;
-  flex-direction: column;
+.supcircle {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  position: absolute;
 }
 
-.curators-h {
-  font-family: "Bebas";
-  font-size: 8rem;
-  color: #eb0028;
+.supcircle::before {
+  content: "";
+  z-index: -1;
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(235, 0, 39, 0.5215686275);
+  border-radius: 50%;
+}
+
+.supcircle.two::before {
+  left: -2.5rem;
 }
 
 .supmaam {
   display: flex;
-  margin-top: 7rem;
-  width: 70%;
-  justify-content: space-between;
-}
-.supmaam img {
-  width: 30%;
+  width: 80rem;
+  padding: 5rem;
+  position: relative;
+  text-align: left;
+  font-size: 1.5em;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  border: 1px solid rgba(255, 255, 255, 0.44);
+  margin-bottom: 10rem;
 }
 .supmaam p {
-  border-right: red solid;
+  color: black;
+  font-family: "Bebas", sans-serif;
+  font-size: 2rem;
+}
+
+.kashcircle {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.kashcircle::before {
+  content: "";
+  z-index: -1;
+  height: 20rem;
+  width: 20rem;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: rgba(235, 0, 39, 0.5215686275);
+  border-radius: 50%;
+}
+
+.kashcircle.two::before {
+  left: 77rem;
+}
+
+.kashmaam {
+  display: flex;
+  width: 80rem;
+  padding: 5rem;
+  position: relative;
+  text-align: left;
+  font-size: 1.5em;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.6px);
+  -webkit-backdrop-filter: blur(7.6px);
+  border: 1px solid rgba(255, 255, 255, 0.44);
+  margin-bottom: 8rem;
+}
+.kashmaam p {
+  color: black;
+  font-family: "Bebas", sans-serif;
+  font-size: 2rem;
+}
+
+.curator-heading {
+  font-size: 8rem;
+  transition: ease 0.65s;
+  width: 100%;
+  text-align: center;
+  color: #eb0028;
+  margin-bottom: 10rem;
 }
 
 #trailer {
