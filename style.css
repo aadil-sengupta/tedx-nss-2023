@@ -1009,7 +1009,6 @@ footer .btn:hover {
   }
   .navbar {
     display: block;
-    width: 100vw;
   }
   .x {
     -webkit-mask-image: none;
