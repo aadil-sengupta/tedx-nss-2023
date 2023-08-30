@@ -794,7 +794,7 @@ section {
 }
 
 .kashcircle.two::before {
-  left: 77rem;
+  left: -2.5rem;
 }
 
 .kashmaam {
@@ -1085,6 +1085,44 @@ footer .btn:hover {
   }
   #toggleNav {
     background-color: transparent;
+  }
+  .main-creative {
+    position: relative;
+    /* right: 10em; */
+    /* bottom: 13em; */
+    width: 70vh;
+  }
+  .supmaam {
+    width: calc(100% - 70px);
+    padding: 30px;
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+  }
+  .supcircle {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: calc(50% - 75px) !important;
+  }
+  .supcircle::before {
+    display: none;
+  }
+  .kashmaam {
+    width: calc(100% - 70px);
+    padding: 30px;
+    position: relative;
+    text-align: left;
+    font-size: 14px;
+  }
+  .kashcircle {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: calc(50% - 75px) !important;
+  }
+  .kashcircle::before {
+    display: none;
   }
   .mob {
     display: block;
