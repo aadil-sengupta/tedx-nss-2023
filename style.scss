@@ -524,13 +524,6 @@ section {
     }
 }
 
-
-//KASHMIRA MAAM CHANGE
-// #text2-theme{
-//     text-align: justify;
-//     font-size: 2rem;    
-// }
-
 .main-text-wrap{
     width: 100%;
 }
@@ -840,96 +833,32 @@ section {
     gap: 50px;
 }
 
-.supcircle{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    position: absolute;
+.curators-section{
+    width: 93%;
+    margin: 0 auto;
+    margin-top: 15vh;
+    display: flex;
+    flex-direction: column;
 }
-.supcircle::before{
-    content: '';
-    z-index: -1;
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background: #eb002785;
-    border-radius: 50%;
+
+.curators-h{
+    font-family: 'Bebas';
+    font-size: 8rem;
+    color: #eb0028;
 }
-.supcircle.two::before{
-    left: -20px;
-}
+
 .supmaam{
     display: flex;
-    width: 800px;
-    padding: 50px;
-    position: relative;
-    text-align: left;
-    font-size: 14px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.6px);
-    -webkit-backdrop-filter: blur(7.6px);
-    border: 1px solid rgba(255, 255, 255, 0.44);  
-    margin-bottom: 10rem; 
-    
-    p{
-        color: black;
-        font-size: 2rem;
+    margin-top: 7rem;
+    width: 70%;
+    justify-content: space-between;
+
+    img{
+        width: 30%;
     }
-}
-
-
-.kashcircle{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    position: absolute;
-}
-.kashcircle::before{
-    content: '';
-    z-index: -1;
-    height: 200px;
-    width: 200px;
-    position: absolute;
-    top: 20px;
-    left: 20px;
-    background: #eb002785;
-    border-radius: 50%;
-}
-.kashcircle.two::before{
-    left: -20px;
-}
-.kashmaam{
-    display: flex;
-    width: 800px;
-    padding: 50px;
-    position: relative;
-    text-align: left;
-    font-size: 14px;
-    background: rgba(255, 255, 255, 0.5);
-    border-radius: 16px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(7.6px);
-    -webkit-backdrop-filter: blur(7.6px);
-    border: 1px solid rgba(255, 255, 255, 0.44);   
-    margin-bottom: 8rem;
-    
     p{
-        color: black;
-        font-size: 2rem;
+        border-right: red solid;
     }
-}
-
-.curator-heading{
-    font-size:  8rem;
-    transition: ease 0.65s;
-    width: 100%;
-    text-align: center;
-    color: #eb0028;
-    margin-bottom: 10rem;
 }
 
 
@@ -1223,5 +1152,3 @@ footer{
         display: none;
     }
 }
-
-
