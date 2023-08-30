@@ -171,8 +171,8 @@ var tl = new TimelineMax();
 tl.to('#wheel', 1, { scale: 0.85, rotation: 17.5, ease: 'none' },0) // Power1.easeIn
 .to('#wheel', 1, { scale: 0.7, rotation: 35, opacity: 0, boxShadow: 0, ease: 'none' },1)
 .to('#wheel-group', 0, { backgroundColor: 'none', boxShadow:0, ease: 'none' },1)
-.to('#x',1, {scale: 6, transformOrigin:"40px 42px", ease: 'none'  }, 0 )
-.to('#x',1, {scale: 9, transformOrigin:"40px 42px",opacity: detectMob() ? 0:1 , backgroundColor: detectMob() ? 'transparent':'rgba(235,0,40,0)',x: detectMob() ? 0 : 340, ease: Power1.easeOut }, 1 )
+.to('#x',1, {scale: 6, transformOrigin:"center", ease: 'none'  }, 0 )
+.to('#x',1, {scale: 9, transformOrigin:"center",opacity: detectMob() ? 0:1 , backgroundColor: detectMob() ? 'transparent':'rgba(235,0,40,0)',x: detectMob() ? -42.5 : 340, ease: Power1.easeOut }, 1 )
 .to( detectMob() ? '' : '#about-head', 1, { opacity: 1, width: 520,  ease: 'none' },1 )
 .to( detectMob() ? '' : '.about-text', 1, { opacity: 1, width: 720, ease: 'none' },1 )
 
@@ -201,10 +201,11 @@ var cardReveal = document.getElementsByClassName("cardContainer");
 for (var i=0; i < cardReveal.length; i++) { // create a scene for each element
   new ScrollMagic.Scene({
             triggerElement: cardReveal[i], // y value not modified, so we can use element as trigger as well
-            offset: i*80,												 // start a little later
+            offset: detectMob() ? i*50 : i*80,												 // start a little later
             triggerHook: 0.9,
           })
           .setClassToggle(cardReveal[i], "visible") // add class toggle
+          //.addIndicators()
           .addTo(controller);
 }
 var text1_theme = document.querySelector("#text1-theme");
@@ -253,6 +254,9 @@ new ScrollMagic.Scene({
   }
   setInterval('updateTimer()', 1000 );
   
+if (detectMob()){
+  document.querySelector('#x').setAttribute('src', 'assets/X_red.png')
+}
 
   if (!detectMob()) {
 
@@ -287,3 +291,10 @@ new ScrollMagic.Scene({
   }
 
 }
+
+
+//NavBar
+
+document.querySelector('#toggleNav').addEventListener('click', () => {
+  document.querySelector('.nav').classList.toggle('navOpen');
+});
