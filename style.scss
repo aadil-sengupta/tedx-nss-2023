@@ -876,7 +876,7 @@ section {
     position: relative;
     text-align: left;
     font-size: 1.5em;
-    background: rgba(255, 255, 255, 0.5);
+    // background: rgba(255, 255, 255, 0.5);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.6px);
@@ -885,8 +885,8 @@ section {
     margin-bottom: 10rem;
 
     p {
-        color: black;
-        font-family: 'Bebas', sans-serif;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
         font-size: 2rem;
     }
 }
@@ -922,7 +922,7 @@ section {
     position: relative;
     text-align: left;
     font-size: 1.5em;
-    background: rgba(255, 255, 255, 0.5);
+    // background: rgba(255, 255, 255, 0.5);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7.6px);
@@ -931,8 +931,8 @@ section {
     margin-bottom: 8rem;
 
     p {
-        color: black;
-        font-family: 'Bebas', sans-serif;
+        color: white;
+        font-family: 'Montserrat', sans-serif;
         font-size: 2rem;
     }
 }
@@ -1168,6 +1168,7 @@ footer {
 
     .navbar {
         display: block;
+        width: 100vw;
     }
 
     .x {
