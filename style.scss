@@ -938,12 +938,13 @@ section {
 }
 
 .curator-heading {
-    font-size: 8rem;
+    font-size: 13rem;
     transition: ease 0.65s;
     width: 100%;
     text-align: center;
     color: #eb0028;
     margin-bottom: 10rem;
+    font-family: "Bebas", sans-serif;
 }
 
 
@@ -969,6 +970,10 @@ section {
 
 body:hover>#trailer {
     opacity: 1;
+}
+
+.bubbles-div{
+    display: inline-block;
 }
 
 .interactables {
@@ -1276,7 +1281,7 @@ footer {
         position: relative;
         right: 1em;
         bottom: 5em;
-        width: 160%;
+        width: 100vw;
     }
 
     .supmaam {
@@ -1318,12 +1323,18 @@ footer {
         display: none;
     }
 
+    .bubbles-div{
+        display: inline-block;
+        width: 50%;
+    }
+
 
     .mob {
         display: block;
     }
 
     .desk {
+
         display: none;
     }
 }

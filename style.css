@@ -817,12 +817,13 @@ section {
 }
 
 .curator-heading {
-  font-size: 8rem;
+  font-size: 13rem;
   transition: ease 0.65s;
   width: 100%;
   text-align: center;
   color: #eb0028;
   margin-bottom: 10rem;
+  font-family: "Bebas", sans-serif;
 }
 
 #trailer {
@@ -839,6 +840,10 @@ section {
 
 body:hover > #trailer {
   opacity: 1;
+}
+
+.bubbles-div {
+  display: inline-block;
 }
 
 .interactables {
@@ -1094,7 +1099,7 @@ footer .btn:hover {
     position: relative;
     right: 1em;
     bottom: 5em;
-    width: 160%;
+    width: 100vw;
   }
   .supmaam {
     width: calc(100% - 70px);
@@ -1127,6 +1132,10 @@ footer .btn:hover {
   }
   .kashcircle::before {
     display: none;
+  }
+  .bubbles-div {
+    display: inline-block;
+    width: 50%;
   }
   .mob {
     display: block;
