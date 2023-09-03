@@ -1324,11 +1324,69 @@ footer {
         display: none;
     }
 
-    .bubbles-div{
-        display: inline-block;
-        width: 50%;
+    .bubble8 {
+        position: absolute;
+        width: 4em;
+        bottom: 11em;
+        right: 12em;
+    }
+    
+    .bubble7 {
+        position: absolute;
+        width: 3.7em;
+        bottom: 7em;
+        right: 11em;
     }
 
+    .bubble9 {
+        position: absolute;
+        width: 4em;
+        bottom: 1.5em;
+        right: 12em;
+    }
+    
+    .bubble5 {
+        position: absolute;
+        width: 4.5em;
+        bottom: 7.3em;
+        right: 6.5em;
+    }
+    
+    .bubble4 {
+        position: absolute;
+        width: 4.5em;
+        bottom: 5em;
+        right: 5.5em;
+    }
+    
+    .bubble6 {
+        position: absolute;
+        width: 4.5em;
+        bottom: -3em;
+        right: 6.5em;;
+    }
+    
+    .bubble2 {
+        position: absolute;
+        width: 4.5em;
+        bottom: 6.5em;
+        right: 0.8em;
+    }
+    
+    .bubble1 {
+        position: absolute;
+        width: 4.5em;
+        bottom: 0em;
+        right: 0.5em;
+    }
+    
+    .bubble3 {
+        position: absolute;
+        width: 4.5em;
+        bottom: -11em;
+        right: 0.5em;
+    }
+    
 
     .mob {
         display: block;
