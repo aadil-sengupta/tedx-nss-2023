@@ -772,6 +772,7 @@ section {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
+  text-align: justify;
 }
 
 .kashcircle {
@@ -815,6 +816,7 @@ section {
   color: white;
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
+  text-align: justify;
 }
 
 .curator-heading {
@@ -1016,6 +1018,9 @@ footer .btn:hover {
   .navbar {
     display: block;
   }
+  .navbar-nav {
+    margin: 0;
+  }
   .x {
     -webkit-mask-image: none;
             mask-image: none;
@@ -1102,8 +1107,8 @@ footer .btn:hover {
     bottom: 5em;
     width: 100vw;
   }
-  .supmaam {
-    width: calc(100% - 70px);
+  .curator-card {
+    width: calc(100% - 30px);
     padding: 30px;
     position: relative;
     text-align: left;
@@ -1117,13 +1122,6 @@ footer .btn:hover {
   }
   .supcircle::before {
     display: none;
-  }
-  .kashmaam {
-    width: calc(100% - 70px);
-    padding: 30px;
-    position: relative;
-    text-align: left;
-    font-size: 14px;
   }
   .kashcircle {
     width: 150px;
@@ -1187,6 +1185,9 @@ footer .btn:hover {
     width: 4.5em;
     bottom: -11em;
     right: 0.5em;
+  }
+  .curator-heading {
+    font-size: 10rem;
   }
   .mob {
     display: block;
