@@ -292,6 +292,12 @@ if (detectMob()){
 
 }
 
+document.querySelector(".knowbutton").addEventListener("click", (e) => {
+  document.querySelector(".card2").classList.remove("hidden");
+})
+document.querySelector(".closebutton").addEventListener("click", (e) => {
+  document.querySelector(".card2").classList.add("hidden");
+})
 
 //NavBar
 

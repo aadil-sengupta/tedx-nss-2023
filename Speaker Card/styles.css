@@ -11,7 +11,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   min-height: 800px;
 }
 
@@ -113,16 +113,19 @@ body {
 
 
 
+
+
 .card2 {
   background-color: black;
   border-radius: 4px;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
   width: 80vw;
-  height: 0vh;
+  height: 50vh;
   display: flex;
   flex-direction: row;
-  border-radius: 25px;
-  position: relative;
+  border-radius: 30px;
+  position: absolute;
+  z-index: 10;
 }
 .card2 h2 {
   margin: 0;
@@ -152,14 +155,14 @@ body {
 }
 
 .img-avatar {
-  width: 160px;
-  height: 80px;
+  width: 8rem;
+  height: 5rem;
   position: relative;
   border-radius: 50%;
   border: 6px solid white;
   background: radial-gradient(486px at 37.5% -17.2%, rgb(255, 2, 2) 0%, rgb(254, 78, 172) 90%);
-  top: 15px;
-  left: 20.2em;
+  top: 1.2rem;
+  left: 26.2rem;
 }
 
 .card-text {
@@ -169,31 +172,34 @@ body {
 
 .title-total {
   padding: 2.5em 1.5em 1.5em 1.5em;
+  background-color: black;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
 }
 
 .portada {
   width: 100%;
   height: 100%;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
   background-image: url("https://images.unsplash.com/photo-1693858323643-b61be7341e6f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80");
   background-position: bottom center;
   background-size: cover;
 }
 
-button {
-  border: none;
-  background: none;
-  font-size: 24px;
+.closebutton{
+  position: relative;
+  right: -47rem;
+  top: -1.5rem;
   color: red;
+  font-size: large;
   cursor: pointer;
-  transition:.5s;
-  &:hover{
-    color: #4CAF50  ;
-    transform: rotate(22deg)
-  }
 }
 
+
+.hidden{
+  display: none;
+}
 
 /* .mainspeakercard {
   width: 80vw;

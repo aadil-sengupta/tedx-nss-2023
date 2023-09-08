@@ -9,7 +9,7 @@
 </head>
 
 <body>
-  <div class=container style="display: none;">
+  <div class=container>
     <div class=card>
       <div class=image>
         <img href="#" src="kashmiramaam.JPG">
@@ -25,32 +25,29 @@
     </div>
   </div>
 
-  <div class="card2">
-    <div class="img-avatar">
-    </div>
+  <div class="card2 hidden">
     <div class="card-text">
       <div class="portada">
-      
+
       </div>
-      <div class="title-total">   
+      <div class="title-total">
+        <div class="closebutton">X</div>
         <div class="title">Profession/Company</div>
         <h2 class="name">Speaker Name</h2>
-    
-    <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis ea incidunt sequi iusto. Soluta, nobis asperiores. Dicta, et possimus. Similique dignissimos expedita odit ea minus? Inventore rerum fuga pariatur. <br><br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis ea incidunt sequi iusto. Soluta, nobis asperiores. Dicta, et possimus. Similique dignissimos expedita odit ea minus? Inventore rerum fuga pariatur.</div>
-    <div class="actions">
-      <button><i class="far fa-heart"></i></button>
-      <button><i class="far fa-envelope"></i></button>
-      <button><i class="fas fa-user-friends"></i></button>
-    </div></div>
-   
+        <br><br>
+
+        <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis ea incidunt
+          sequi iusto. Soluta, nobis asperiores. Dicta, et possimus. Similique dignissimos expedita odit ea minus?
+          Inventore rerum fuga pariatur. <br><br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas perferendis ea incidunt sequi iusto. Soluta,
+          nobis asperiores. Dicta, et possimus. Similique dignissimos expedita odit ea minus? Inventore rerum fuga
+          pariatur.</div>
+      </div>
+
     </div>
-    
-   
-    
   </div>
-  
-    
+
+
   </div>
 
 
@@ -102,7 +99,12 @@
   </div> -->
 
   <script>
-
+    document.querySelector(".knowbutton").addEventListener("click", (e) => {
+      document.querySelector(".card2").classList.remove("hidden");
+    })
+    document.querySelector(".closebutton").addEventListener("click", (e) => {
+      document.querySelector(".card2").classList.add("hidden");
+    })
   </script>
 </body>
 
