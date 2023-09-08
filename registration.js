@@ -132,7 +132,7 @@ let check = () => {
             });
 
 
-        sendDiscordWebhookMessage(email).value;
+        sendDiscordWebhookMessage(email.value);
     }
 
     
