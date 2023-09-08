@@ -222,6 +222,7 @@ body {
 
 .fixed {
   border-bottom: none;
+  z-index: 99;
 }
 
 .nav-logo {
@@ -1094,8 +1095,8 @@ footer .btn:hover {
 }
 
 .knowbutton:hover {
-  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
-  transition-duration: 0.1s;
+  transform: scale(1.05);
+  transition-duration: 0.4s;
 }
 
 .card2 {
@@ -1186,6 +1187,57 @@ footer .btn:hover {
 
 .speakers {
   height: 100vh;
+}
+
+.alert {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.alert .cardWrap {
+  background-color: #111;
+  width: 90%;
+  height: 95%;
+  border-radius: 15px;
+  z-index: 999999999;
+  position: relative;
+}
+.alert .cardWrap .lhs {
+  width: 35%;
+  height: 100%;
+  border-right: #1d1d1d 2px solid;
+  overflow: hidden;
+}
+.alert .cardWrap .lhs img {
+  height: 100%;
+  filter: drop-shadow(5px);
+}
+.alert .cardWrap .rhs {
+  height: 100%;
+  width: 65%;
+}
+
+.crossBtn {
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  position: absolute;
+  right: 22px;
+  top: 20px;
+}
+.crossBtn ion-icon {
+  color: white;
+  font-size: 3.5rem;
 }
 
 .hidden {
