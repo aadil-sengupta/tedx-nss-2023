@@ -1190,7 +1190,7 @@ footer {
     height: 260px;
     top: -40%;
     left: 8px;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    // box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
   
@@ -1339,6 +1339,16 @@ footer {
     font-size: large;
     cursor: pointer;
   }
+
+  .speakerheading {
+    font-size: 13rem;
+    transition: ease 0.65s;
+    width: 100%;
+    text-align: center;
+    color: #eb0028;
+    margin-bottom: 10rem;
+    font-family: "Bebas", sans-serif;
+}
   
 
   .speakers{
