@@ -1,0 +1,88 @@
+@import url("https://fonts.cdnfonts.com/css/futura-pt");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@font-face {
+  font-family: Bebas;
+  src: url(assets/BebasNeue-Regular.otf);
+}
+body {
+  background-color: #080710;
+  color: #eb0028;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: auto;
+  min-height: 100vh;
+}
+
+.head {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1.18em;
+  width: 100%;
+  text-align: center;
+  font-family: "Montserrat";
+}
+
+.cardWrap {
+  height: auto;
+  min-height: 50vh;
+  width: 80%;
+  background-color: #080710;
+  border-color: #292929;
+  border-radius: 5px;
+  border-width: 1px;
+  border-style: solid;
+  padding-bottom: 5em;
+  transform: scale(0.85);
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+  margin-left: 1.15rem;
+  border-radius: 8px;
+  font-size: 1.7rem;
+  padding: 9px 14px;
+  font-family: "Montserrat";
+  background-color: #1b1b1b;
+  border: none;
+  outline: none;
+  color: white;
+  width: 90%;
+}
+
+.input-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+}
+.input-wrap .icon {
+  font-size: 2.2em;
+  width: 10%;
+}
+
+.row-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0 0.8em;
+}
+
+.amount {
+  font-family: "Montserrat";
+  font-size: 700;
+  font-size: 1.6em;
+}
+
+.qrcode {
+  width: 300px;
+  margin-top: 1em;
+  border: #eb0028 5px solid;
+  border-radius: 5px;
+}
+
+.info {
+  font-size: 1.8rem;
+}/*# sourceMappingURL=registration.css.map */
