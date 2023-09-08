@@ -292,15 +292,36 @@ if (detectMob()){
 
 }
 
-document.querySelector(".knowbutton").addEventListener("click", (e) => {
-  document.querySelector(".card2").classList.remove("hidden");
-})
-document.querySelector(".closebutton").addEventListener("click", (e) => {
-  document.querySelector(".card2").classList.add("hidden");
-})
+// document.querySelector(".knowbutton").addEventListener("click", (e) => {
+//   document.querySelector(".card2").classList.remove("hidden");
+// })
+// document.querySelector(".closebutton").addEventListener("click", (e) => {
+//   document.querySelector(".card2").classList.add("hidden");
+// })
 
 //NavBar
 
 document.querySelector('#toggleNav').addEventListener('click', () => {
   document.querySelector('.nav').classList.toggle('navOpen');
 });
+
+// Speaker POSTS
+
+let closeAll = () => {
+  for(let i = 0; i < document.querySelectorAll('#alert-wrap').length; i++) {
+
+    document.querySelectorAll('#alert-wrap')[i].classList.add('hidden');
+  }
+  document.getElementById('body').classList.remove('scrollStop');
+}
+
+let openScreen = (x) =>{
+  for(let i = 0; i < document.querySelectorAll('.alert-wrap').length; i++) {
+    document.querySelectorAll('.alert-wrap')[i].classList.add('hidden');
+  }
+  document.getElementById('body').classList.add('scrollStop');
+  console.log(x, 'speaker'+x);
+  document.querySelector('.speaker'+x).classList.remove('hidden');
+}
+
+// end speaker posts

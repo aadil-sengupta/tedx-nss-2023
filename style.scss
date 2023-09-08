@@ -1381,26 +1381,48 @@ footer {
     align-items: center;
     .cardWrap{
         background-color: #111;
-        width: 90%;
+        width: 95%;
         height: 95%;
         //margin-top: 5.2%;
         border-radius: 15px;
         z-index: 999999999;
         position: relative;
-
+        display: flex;
+        border: #eb0028 3px solid;
         .lhs{
             width: 35%;
+            min-width: 350px;
+            max-width: 450px;
             height: 100%;
-            border-right: #1d1d1d 2px solid;
-            overflow: hidden;
+            overflow-y: hidden;
             img{
                 height: 100%;
-                filter: drop-shadow(5px);
+                width: 100%;
+                transform: translateX(-13px);
+                filter: drop-shadow(20px 20px 0px #eb002890);
             }
         }
         .rhs{
             height: 100%;
             width: 65%;
+
+            h1{
+                font-size: 9rem;
+                color: #fff;
+                margin-top: 0.75em;
+                font-family: 'Bebas';
+                text-align: center;
+                border-left: #eb0028 11px solid;
+                width: 90%;
+            }
+            p{
+                color: white;
+                font-family: 'Montserrat', sans-serif;
+                font-size: 2.1rem;
+                text-align: justify;
+                margin-top: 2em;
+                padding-right: 7%;
+            }
         }
     }
   }
@@ -1422,6 +1444,10 @@ footer {
   
   .hidden{
     display: none;
+  }
+  .scrollStop{
+    height: 100%;
+    overflow: hidden;
   }
 
 

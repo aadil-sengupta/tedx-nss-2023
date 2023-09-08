@@ -25,7 +25,7 @@
   <title>TedxNavrachana School Sama</title>
 </head>
 
-<body>
+<body id="body">
   <nav class="fixed navbar navbar-default navbar-fixed-top" id="navbarMain">
     <div class="container">
       <div class="navbar-header">
@@ -303,17 +303,27 @@
     </center>
   </section>
 
-  <div id="alert-wrap" class="alert hidden">
+  <div id="alert-wrap" class="alert hidden speaker1">
     <div class="cardWrap">
-      <button onclick="toggleInstruct()" class="crossBtn" ><ion-icon name="close-outline"></ion-icon></button>
+      <button onclick="closeAll()" class="crossBtn" ><ion-icon name="close-outline"></ion-icon></button>
       <div class="lhs">
           <img src="assets/placeholder.png" alt="">
       </div>
       <div class="rhs">
-
+          <h1>Kashmira <span style="color: #eb0028;">Jaiswaal</span></h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, consectetur! Eaque dolore neque iusto qui expedita maxime cumque laborum iure quo facere? Dicta ad dignissimos placeat maxime accusantium laborum alias.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, consectetur! Eaque dolore neque iusto qui expedita maxime cumque laborum iure quo facere? Dicta ad dignissimos placeat maxime accusantium laborum alias.<br> <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, consectetur! Eaque dolore neque iusto
+            <br> <br>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, consectetur! Eaque dolore neque iusto qui expedita maxime cumque laborum iure quo facere? Dicta ad dignissimos placeat maxime accusantium laborum alias.
+          </p>
       </div>
     </div>
   </div>
+  
+
+  <section class="speakers">
+    <div class=containers>
 
   <!-- <hr> -->
   <section class="speakers">
@@ -368,19 +378,17 @@
 
       <div class=card>
         <div class=image>
-          <img href="#" src="assets/anil.jpg" style="width: 76%;">
+          <img href="#" src="assets/tejalamin.jpg" style="width: 80%;">
         </div>
-        <h3 class="visiblename">Anil Srinivasna</h3>
+        <h3 class="visiblename">Tejal Amin</h3>
         <div class=content>
-          <h3>Anil Srinivasna</h3>
+          <h3>Tejal Amin</h3>
           <br>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus itaque harum odio eveniet voluptatum
             similique quibusdam maxime culpa esse eos!</p>
-          <button class="knowbutton">Know More</button>
+          <button onclick="openScreen(1)" class="knowbutton">Know More</button>
         </div>
       </div>
-
-      
   </section>
 
   <!--  

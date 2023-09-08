@@ -1223,25 +1223,47 @@ footer .btn:hover {
 }
 .alert .cardWrap {
   background-color: #111;
-  width: 90%;
+  width: 95%;
   height: 95%;
   border-radius: 15px;
   z-index: 999999999;
   position: relative;
+  display: flex;
+  border: #eb0028 3px solid;
 }
 .alert .cardWrap .lhs {
   width: 35%;
+  min-width: 350px;
+  max-width: 450px;
   height: 100%;
-  border-right: #1d1d1d 2px solid;
-  overflow: hidden;
+  overflow-y: hidden;
 }
 .alert .cardWrap .lhs img {
   height: 100%;
-  filter: drop-shadow(5px);
+  width: 100%;
+  transform: translateX(-13px);
+  filter: drop-shadow(20px 20px 0px rgba(235, 0, 40, 0.5647058824));
 }
 .alert .cardWrap .rhs {
   height: 100%;
   width: 65%;
+}
+.alert .cardWrap .rhs h1 {
+  font-size: 9rem;
+  color: #fff;
+  margin-top: 0.75em;
+  font-family: "Bebas";
+  text-align: center;
+  border-left: #eb0028 11px solid;
+  width: 90%;
+}
+.alert .cardWrap .rhs p {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.1rem;
+  text-align: justify;
+  margin-top: 2em;
+  padding-right: 7%;
 }
 
 .crossBtn {
@@ -1260,6 +1282,11 @@ footer .btn:hover {
 
 .hidden {
   display: none;
+}
+
+.scrollStop {
+  height: 100%;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 800px) {
