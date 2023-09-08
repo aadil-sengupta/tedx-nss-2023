@@ -1030,6 +1030,10 @@ footer .btn:hover {
   box-shadow: 0 5px 35px rgba(235, 0, 39, 0.8941176471);
 }
 
+.krish:hover {
+  height: 40rem;
+}
+
 .image {
   position: relative;
   width: 260px;
