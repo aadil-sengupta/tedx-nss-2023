@@ -828,6 +828,7 @@ section {
   color: #eb0028;
   margin-bottom: 10rem;
   font-family: "Bebas", sans-serif;
+  margin-top: -20px;
 }
 
 #trailer {
@@ -1207,7 +1208,7 @@ footer .btn:hover {
   width: 100%;
   text-align: center;
   color: #eb0028;
-  margin-bottom: 10rem;
+  margin-bottom: 40px;
   font-family: "Bebas", sans-serif;
 }
 
@@ -1488,7 +1489,6 @@ footer .btn:hover {
   .speakerheading {
     font-size: 10rem;
     margin: 0;
-    margin-top: -0.75em;
     margin-bottom: 0.5em;
   }
   .speakers .containers {
