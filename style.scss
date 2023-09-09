@@ -1162,6 +1162,8 @@ footer {
     align-items: center;
     justify-content: center;
     padding: 30px;
+
+    min-height: 600px;
   }
   
   .card {
@@ -1189,7 +1191,7 @@ footer {
   }
   
   .varun:hover{
-    height: 40rem;
+    height: 43rem;
   }
 
   .tejal:hover{
@@ -1702,6 +1704,7 @@ footer {
     .speakers{
         .containers{
             flex-direction: column;
+
             .card{
                 margin: 5em 0;
             }

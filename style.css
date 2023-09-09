@@ -1009,6 +1009,7 @@ footer .btn:hover {
   align-items: center;
   justify-content: center;
   padding: 30px;
+  min-height: 600px;
 }
 
 .card {
@@ -1035,7 +1036,7 @@ footer .btn:hover {
 }
 
 .varun:hover {
-  height: 40rem;
+  height: 43rem;
 }
 
 .tejal:hover {
