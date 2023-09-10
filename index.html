@@ -9,7 +9,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Barcode+128&family=Montserrat:wght@400;600;700&family=Press+Start+2P&display=swap" rel="stylesheet">
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-TNV0RPMB9T"></script>
@@ -339,6 +341,29 @@
       </div>
     </div>
   </div>
+
+  <div id="alert-wrap" class="alert hidden speaker5">
+    <div class="cardWrap">
+      <button onclick="closeAll()" class="crossBtn" ><ion-icon name="close-outline"></ion-icon></button>
+      <div class="lhs">
+          <img style="filter: drop-shadow(-15px -10px 0px #eb002890);" src="assets/anil2-bg.png" alt="">
+      </div>
+      <div class="rhs">
+          <h1>Anil <span style="color: #eb0028;">Challa</span></h1>
+          <p>
+            Dr. Challa obtained his bachelor’s degree in Agricultural Sciences from the Institute of Agricultural Sciences, Banaras Hindu University (Varanasi, India), and a PhD degree in Molecular Genetics from The Ohio State University (Columbus, OH, USA). His doctoral research involved the identification and characterization of receptor proteins involved in embryonic development, especially axon guidance during neuronal development, using the zebrafish as a vertebrate model system. He received postdoctoral training in glycobiology at the University of California at San Diego, RNA biology at The Ohio State University and Vascular Biology at the Medical College of Wisconsin.
+            <br><br>
+            He co-founded a start-up biotechnology company in Hyderabad, India (Indigenèse Biotechnology) where he set up the laboratory and directed the education and outreach activities. He then did a short stint as a Senior Research Scientist at the Institute of Life Sciences (now Dr. Reddy’s Institute of Life Sciences) in the University of Hyderabad Campus where he established the zebrafish facility to support research in drug discovery and testing.
+            <br><br>
+            As a Visiting Scientist at the Greehey Children’s Cancer Research Institute, UT Health Sciences Center (San Antonio, TX, USA) and at Dr. Reddy’s Institute of Life Sciences (Hyderabad, India), he was involved with generating genetic models of zebrafish to study human disorders.
+            <br><br>
+            As the Assistant Director of the Transgenic and Genetically Engineered Models (TGEMs) Core facility at the University of Alabama at Birmingham, he initiated in vivo gene manipulation using TALEN and CRISPR technologies. He continues as an Adjunct Professor of Biology, engaged with collaborative research projects in redox biology, pulmonary biology, juvenile diabetes, and undergraduate biology teaching.
+            <br><br>
+            He contributes to research and teaching activities and as a Senior Scientist at the Shiv Nadar Institution of Eminence in Delhi NCR.
+          </p>
+      </div>
+    </div>
+  </div>
   
 
   <section class="speakers">
@@ -392,6 +417,21 @@
           <button onclick="openScreen(3)" class="knowbutton">Know More</button>
         </div>
       </div>
+
+
+      <div class="card tejal anil2">
+        <div class=image>
+          <img href="#" src="assets/anil2.jpg" style="width: 80%;">
+        </div>
+        <h3 class="visiblename">Anil Challa</h3>
+        <div class=content>
+          <h3>Anil Challa</h3>
+          <br>
+          <p style="font-size: 1.3rem;">Dr. Anil Challa is a senior scientist in the Department of Life Sciences at Shiv Nadar Institution of Eminence, Delhi. After attaining his phD degree in molecular genetics, Dr. Anil co founded a biotechnology company and established the zebrafish facility to support research in drug discovery and testing. Further, he adeptly initiated in vivo gene manipulation using TALEN and CRISPR technologies. He continues to serve as an Adjunct Professor of Biology in the University of Alabama, Birmingham.</p>
+          <button onclick="openScreen(5)" class="knowbutton">Know More</button>
+        </div>
+      </div>
+
 
       <div class="card tejal">
         <div class=image>
@@ -447,6 +487,63 @@
         </div>
     </center>
   </section>
+
+
+  <!-- <section class="photos-sec desk">
+    <div class="container">
+      <div class="slider">
+          <div class="box1 box">
+                  <img src="https://www.surfertoday.com/images/stories/beach-sunset.jpg" alt="Image 1" style="width: 100%;"
+                       >
+            
+          </div>
+
+          <div class="box2 box">
+              <div class="bg"></div>
+              <div class="details">
+                  <img src="image2.jpg" alt="Image 2">
+                  <button>Check Now</button>
+              </div>
+          </div>
+
+          <div class="box3 box">
+              <div class="bg"></div>
+              <div class="details">
+                  <img src="image3.jpg" alt="Image 3">
+                  <button>Check Now</button>
+              </div>
+          </div>
+
+          <div class="box4 box">
+              <div class="bg"></div>
+              <div class="details">
+                  <img src="image4.jpg" alt="Image 4">
+                  <button>Check Now</button>
+              </div>
+          </div>
+
+          <div class="box5 box">
+              <div class="bg"></div>
+              <div class="details">
+                  <img src="image5.jpg" alt="Image 5">
+                  <button>Check Now</button>
+              </div>
+          </div>
+      </div>
+
+      <svg xmlns="http://www.w3.org/2000/svg" class="prev" width="56.898" height="91" viewBox="0 0 56.898 91"><path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(0 91) rotate(-90)" fill="#fff"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="next" width="56.898" height="91" viewBox="0 0 56.898 91"><path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)" fill="#fff"/></svg>
+      <div class="trail">
+          <div class="box1 active">1</div>
+          <div class="box2">2</div>
+          <div class="box3">3</div>
+          <div class="box4">4</div>
+          <div class="box5">5</div>
+      </div>
+  </div>
+  </section> -->
+
+
   <footer class="footer" >
     <img class="logo" src="assets/logo-white.png">
     <div class="links">
@@ -460,19 +557,23 @@
     <a href="/registration.html" class="join-btn-nav noHover btn desk" style="color: white;">Buy Tickets</a>
   </footer>
 
+
+
   <!-- <div class="scrollTrack" id="scrollTrack"></div> -->
   <div id="trailer"> </div>   
   
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <!-- <script src="https://flackr.github.io/scroll-timeline/dist/scroll-timeline.js" ></script> -->
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-
   <script src="index.js"></script>
+
+    <!-- <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script> -->
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"></script>
 
 </body>
 
