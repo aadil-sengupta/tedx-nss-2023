@@ -1388,7 +1388,10 @@ footer {
     font-family: "Bebas", sans-serif;
 }
   
-
+#umang{
+    position: relative;
+    right: 8em;
+}
 
 
   .alert{
@@ -1587,8 +1590,7 @@ footer {
       }
     }
     
-    &__head-dest {
-    }
+   
     
     &__body {
       position: relative;
@@ -2307,6 +2309,7 @@ body {
             }
         }
     }
+
     .alert{
         height: 100%;
         width: 100%;
