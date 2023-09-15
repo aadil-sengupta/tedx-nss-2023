@@ -992,7 +992,7 @@ footer .btn:hover {
   height: 43rem;
 }
 
-.tejal:hover {
+.anil2:hover {
   height: 45em;
 }
 
@@ -1007,6 +1007,15 @@ footer .btn:hover {
   top: -40%;
   left: 8px;
   z-index: 1;
+}
+
+.image2 {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -40%;
+  left: 8px;
+  z-index: 10;
 }
 
 .image img {
