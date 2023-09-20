@@ -27,9 +27,9 @@ let show_names = () =>{
     tier = document.getElementById('tier').value;
     let price = 0;
     if (tier == 'Premium'){
-        price = 700
-    } else if(tier == 'Regular' ){
         price = 500
+    } else if(tier == 'Regular' ){
+        price = 300
     }
 
     document.getElementById('amount').innerHTML = '₹'+(price * no.value)
