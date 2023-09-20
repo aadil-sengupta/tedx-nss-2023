@@ -1172,6 +1172,9 @@ footer {
     min-height: 600px;
     transform: translateY(-150px);
     // z-index: -50;
+    &:hover{
+        z-index: 97;
+    }
 }
   
   .card {

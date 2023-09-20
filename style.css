@@ -960,6 +960,9 @@ footer .btn:hover {
   min-height: 600px;
   transform: translateY(-150px);
 }
+.containers2:hover {
+  z-index: 97;
+}
 
 .card {
   position: relative;
