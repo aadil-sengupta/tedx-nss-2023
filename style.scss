@@ -1731,6 +1731,50 @@ footer {
   }
 }
 
+.sponsor-sec{
+    min-height: 70vh;
+    margin-top: 20em;
+    margin-bottom: 17em;
+    .flex-row{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .row1{
+        .img{
+            width: 20em;
+            border: #eb0028 3px solid; 
+            border-radius: 15px;
+        }
+        .car{
+            width: 34em;
+        }
+        .chan{
+            width: 33em;
+        }
+    }
+    .row2{
+        margin-top: 5em;
+        .img{
+            width: 26em;
+            border: #eb0028 3px solid; 
+            border-radius: 15px;  
+        }
+        .dee{
+            width: 35em;
+        }
+    }
+    .row3{
+        margin-top: 5em;
+        .img{
+            width: 18em;
+            border: #eb0028 3px solid; 
+            border-radius: 15px;  
+        }
+
+    }
+}
 
 .photos-sec{
     // Colors
