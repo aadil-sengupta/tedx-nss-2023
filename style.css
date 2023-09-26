@@ -1503,6 +1503,22 @@ p {
   border: #eb0028 3px solid;
   border-radius: 15px;
 }
+.sponsor-sec .row4 {
+  margin-top: 5em;
+}
+.sponsor-sec .row4 .img {
+  width: 22em;
+  border: #eb0028 3px solid;
+  border-radius: 15px;
+}
+.sponsor-sec .row5 {
+  margin-top: 5em;
+}
+.sponsor-sec .row5 .img {
+  width: 22em;
+  border: #eb0028 3px solid;
+  border-radius: 15px;
+}
 
 .photos-sec {
   display: flex;
